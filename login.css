@@ -1,0 +1,51 @@
+/* Add animation to "page content" */
+
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+    to {
+        bottom: 0px;
+        opacity: 1
+    }
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+#myDiv {
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+    color: white
+}
+
+#login {
+    width: 500px;
+    border: 1px solid #CCCCCC;
+    background-color: black;
+    color: white;
+    margin: auto;
+    margin-top: 200px;
+    padding: 20px;
+}
