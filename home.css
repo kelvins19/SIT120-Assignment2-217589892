@@ -81,3 +81,8 @@ body {
     background-color: black;
     color: white
 }
+
+img#loginlogo {
+    width: 150px;
+    height: 60px;
+}

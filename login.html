@@ -5,19 +5,26 @@
     <title> LOGIN TO YOUR NINTENDO ACCOUNT </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="stylesheet" type="text/css" href="sidebar.css">
 </head>
 
 <body>
     <script src="vue.js"></script>
 
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="home.html">HOME</a>
+        <a href="event.html">EVENT</a>
+        <a href="update.html">UPDATE</a>
+        <a href="achievement.html">ACHIEVEMENT</a>
+        <a href="login.html">LOGIN</a>
+    </div>
+    <script src="sidebar.js"></script>
+
     <div id="myDiv" class="animate-bottom">
+        <button class="openbtn" onclick="openNav()">&#9776; MENU</button>
         <h1>SWIELD</h1>
         <hr>
-        <h2> <a href="home.html">HOME PAGE!</a> </h2>
-        <h2> <a href="event.html">EVENT PAGE!</a> </h2>
-        <h2> <a href="update.html">UPDATE PAGE!</a> </h2>
-        <h2> <a href="achievement.html">ACHIEVEMENT PAGE!</a> </h2>
-        <h2> <a href="login.html">LOGIN PAGE!</a> </h2>
     </div>
 
     <h3> THIS IS THE LOGIN PAGE!!! </h3>
