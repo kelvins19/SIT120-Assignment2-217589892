@@ -73,12 +73,14 @@
 
 #myDiv {
     display: none;
+    /* background-image: url(.\image\background.png); */
     text-align: center;
 }
 
 body {
     margin: 0;
-    background-color: black;
+    /* background-image: url(.\image\background.png); */
+    background-color: #cccccc;
     color: white
 }
 
