@@ -87,4 +87,13 @@ body {
 img#loginlogo {
     width: 150px;
     height: 60px;
+    float: right;
+}
+
+#heading {
+    background-color: black;
+}
+
+.alighright {
+    float: right;
 }
