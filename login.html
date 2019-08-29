@@ -27,29 +27,32 @@
         <hr>
     </div>
 
-    <h3> THIS IS THE LOGIN PAGE!!! </h3>
+    <div id="login-title-header">
+        <h3 id="login-title"> PLEASE LOGIN TO YOUR NINTENDO ACCOUNT TO ACCESS MORE FEATURES </h3>
+    </div>
     <!--Login Form-->
     <div id="login">
-        <form id="app" onclick="checkForm()" method="post">
-            <!--Checking Errors-->
-            <p v-if="errors.length">
-                <b>Please correct the following error(s):</b>
-                <ul>
-                    <li v-for="error in errors">{{ error }}</li>
-                </ul>
-            </p>
+        <form id="validated-form" onclick="validateForm()" method="post">
             <!--Username Field-->
-            <p>
+            <div>
                 <label for="username">Username:</label>
-                <input type="text" name="username" v-model="username" placeholder="Username" />
-            </p>
+                <div>
+                    <input type="text" class="form-control" name="username" placeholder="Username" required>
+                    <span class="text-danger" v-if="validationErrors.username" style="width: 100%;" v-text="validationErrors.username"></span>
+                </div>
+            </div>
             <!--Password Field-->
-            <p>
+
+            <div>
                 <label for="password">Password:</label>
-                <input type="password" name="password" v-model="password" placeholder="Password" />
-            </p>
+                <div>
+                    <input type="password" name="password" v-model="password" placeholder="Password" id="password" class="form-control" required/>
+                    <span class="text-danger" v-if="validationErrors.password" style="width: 100%;" v-text="validationErrors.password"></span>
+                </div>
+            </div>
+
             <!--Submit Button-->
-            <input type="button" value="Submit">
+            <input type="button" value="Submit" @click.prevent="submitForm()">
         </form>
         <script src="login.js"></script>
     </div>

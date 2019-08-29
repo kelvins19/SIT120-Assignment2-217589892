@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="home.css">
     <link rel="stylesheet" type="text/css" href="sidebar.css">
-    <link rel="stylesheet" type="text/css" href="background.css">
 </head>
 
 <body onload="myFunction()">
@@ -16,7 +15,7 @@
     <!--Pre-launched loader-->
     <div id="loader"></div>
 
-    <!--Main Page-->
+    <!--Sidebar Navigation-->
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="home.html">HOME</a>
@@ -27,19 +26,18 @@
     </div>
     <script src="sidebar.js"></script>
 
-    <div id="myDiv" class="animate-bottom">
-        <button class="openbtn" onclick="openNav()" class="alignleft">&#9776; MENU</button>
-        <div id="heading">
-            <h1>SWIELD</h1>
-            <div id="loginbutton">
-                <a href="login.html"><img id="loginlogo" src=".\image\my-nintendo.png"></a>
-            </div>
-            <hr>
+    <!--Main Page-->
+    <div id="myPage" class="animate-bottom">
+        <div class="header">
+            SWIELD
+            <button class="openbtn" onclick="openNav()" class="alignleft">&#9776; MENU</button>
+            <a href="login.html"><img id="loginlogo2" src=".\image\my-nintendo.png" class="alignright"></a>
         </div>
-
-        <h3> THIS IS THE HOME PAGE!!! </h3>
+        <hr>
+        <div class="content">
+            <h3> THIS IS THE HOME PAGE!!! </h3>
+        </div>
     </div>
-
 
 </body>
 
