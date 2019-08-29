@@ -1,3 +1,44 @@
+/* Center the loader */
+
+
+/* Loader style */
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
 /* Add animation to "page content" */
 
 .animate-bottom {
@@ -28,30 +69,6 @@
         bottom: 0;
         opacity: 1
     }
-}
-
-body {
-    margin: 0;
-    background-color: black;
-    color: white
-}
-
-#login {
-    width: 500px;
-    border: 1px solid #CCCCCC;
-    background-color: maroon;
-    color: white;
-    margin: auto;
-    padding: 20px;
-}
-
-h3#login-title {
-    float: center;
-}
-
-#login-title-header {
-    margin: auto;
-    margin-top: 150px;
 }
 
 
@@ -101,9 +118,23 @@ h3#login-title {
     }
 }
 
+
+/* Footer Styles */
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    background-color: rgb(71, 71, 71);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
 #myPage {
     display: none;
-    background-image: url(.\image\background.png);
     text-align: center;
 }
 
@@ -133,8 +164,25 @@ img#loginlogo2 {
 }
 
 .content {
-    background-image: url(.\image\background.png);
     background-color: blue;
     margin: auto;
     width: auto;
+}
+
+#login {
+    width: 500px;
+    border: 1px solid #CCCCCC;
+    background-color: maroon;
+    color: white;
+    margin: auto;
+    padding: 20px;
+}
+
+h3#login-title {
+    text-align: center;
+}
+
+#login-title-header {
+    margin: auto;
+    margin-top: 50px;
 }

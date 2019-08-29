@@ -8,9 +8,14 @@
     <link rel="stylesheet" type="text/css" href="sidebar.css">
 </head>
 
-<body>
+<body onload="myFunction()">
+    <script src="loader.js"></script>
     <script src="vue.js"></script>
 
+    <!--Pre-launched loader-->
+    <div id="loader"></div>
+
+    <!--Sidebar Navigation-->
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="home.html">HOME</a>
@@ -21,42 +26,48 @@
     </div>
     <script src="sidebar.js"></script>
 
-    <div id="myDiv" class="animate-bottom">
-        <button class="openbtn" onclick="openNav()">&#9776; MENU</button>
-        <h1>SWIELD</h1>
+    <!--Main Page-->
+    <div id="myPage" class="animate-bottom">
+        <div class="header">
+            SWIELD
+            <button class="openbtn" onclick="openNav()" class="alignleft">&#9776; MENU</button>
+            <a href="login.html"><img id="loginlogo2" src=".\image\my-nintendo.png" class="alignright"></a>
+        </div>
         <hr>
-    </div>
+        <div id="login-title-header">
+            <h3 id="login-title"> PLEASE LOGIN TO YOUR NINTENDO ACCOUNT TO ACCESS MORE FEATURES </h3>
+        </div>
 
-    <div id="login-title-header">
-        <h3 id="login-title"> PLEASE LOGIN TO YOUR NINTENDO ACCOUNT TO ACCESS MORE FEATURES </h3>
-    </div>
-    <!--Login Form-->
-    <div id="login">
-        <form id="validated-form" onclick="validateForm()" method="post">
-            <!--Username Field-->
-            <div>
-                <label for="username">Username:</label>
+        <!--Login Form-->
+        <div id="login">
+            <form id="validated-form" onclick="validateForm()" method="post">
+                <!--Username Field-->
                 <div>
-                    <input type="text" class="form-control" name="username" placeholder="Username" required>
-                    <span class="text-danger" v-if="validationErrors.username" style="width: 100%;" v-text="validationErrors.username"></span>
+                    <label for="username">Username:</label>
+                    <div>
+                        <input type="text" class="form-control" name="username" placeholder="Username" required>
+                        <span class="text-danger" v-if="validationErrors.username" style="width: 100%;" v-text="validationErrors.username"></span>
+                    </div>
                 </div>
-            </div>
-            <!--Password Field-->
+                <!--Password Field-->
 
-            <div>
-                <label for="password">Password:</label>
                 <div>
-                    <input type="password" name="password" v-model="password" placeholder="Password" id="password" class="form-control" required/>
-                    <span class="text-danger" v-if="validationErrors.password" style="width: 100%;" v-text="validationErrors.password"></span>
+                    <label for="password">Password:</label>
+                    <div>
+                        <input type="password" name="password" v-model="password" placeholder="Password" id="password" class="form-control" required/>
+                        <span class="text-danger" v-if="validationErrors.password" style="width: 100%;" v-text="validationErrors.password"></span>
+                    </div>
                 </div>
-            </div>
 
-            <!--Submit Button-->
-            <input type="button" value="Submit" @click.prevent="submitForm()">
-        </form>
-        <script src="login.js"></script>
+                <!--Submit Button-->
+                <input type="button" value="Submit" @click.prevent="submitForm()">
+            </form>
+            <script src="login.js"></script>
+        </div>
+        <div class="footer">
+            &#169 Deakin University. This web page has been developed as a student assignment for the unit SIT120: Introduction to Responsive Web Apps
+        </div>
     </div>
-
 
 </body>
 
