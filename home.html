@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="home.css">
     <link rel="stylesheet" type="text/css" href="sidebar.css">
+    <link rel="stylesheet" type="text/css" href="content-slider.css">
 </head>
 
 <body onload="myFunction()">
     <script src="loader.js"></script>
     <script src="vue.js"></script>
+
 
     <!--Pre-launched loader-->
     <div id="loader"></div>
@@ -37,6 +39,32 @@
         <div class="content">
             <h3> THIS IS THE HOME PAGE!!! </h3>
         </div>
+
+        <div id="slider">
+            <div class="navigator">
+                <ul class="navigator">
+                    <li @click="prevSlide" class="lightgrey"> &laquo; </li>
+                    <li @click="changeSlide(1)" class="green">1</li>
+                    <li @click="changeSlide(2)" class="blue">2</li>
+                    <li @click="changeSlide(3)" class="grey">3</li>
+                    <li @click="nextSlide" class="lightgrey"> &raquo; </li>
+                </ul>
+            </div>
+            <div class="slider-container">
+                <ul class="slider" :style="styleObject">
+                    <a href="event.html">
+                        <li class="green slide">EVENT</li>
+                    </a>
+                    <a href="achievement.html">
+                        <li class="blue slide">ACHIEVEMENT</li>
+                    </a>
+                    <a href="update.html">
+                        <li class="grey slide">UPDATE</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <script src="content-slider.js"></script>
 
         <div class="footer">
             &#169 Deakin University. This web page has been developed as a student assignment for the unit SIT120: Introduction to Responsive Web Apps
