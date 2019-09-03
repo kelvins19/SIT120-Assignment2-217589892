@@ -147,7 +147,6 @@ body {
     height: 100%;
     overflow: hidden;
     padding: 0;
-    font-family: sans-serif;
     text-align: center;
 }
 
@@ -163,6 +162,8 @@ img#loginlogo2 {
 }
 
 #heading {
+    top: 50%;
+    left: 50%;
     background-color: black;
 }
 
@@ -171,7 +172,6 @@ img#loginlogo2 {
 }
 
 .content {
-    background-color: blue;
     margin: auto;
     width: auto;
 }
