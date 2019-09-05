@@ -41,22 +41,22 @@
                 <div class="navigator">
                     <ul class="navigator">
                         <li @click="prevSlide" class="lightgrey"> &laquo; </li>
-                        <li @click="changeSlide(1)" class="green">1</li>
-                        <li @click="changeSlide(2)" class="blue">2</li>
-                        <li @click="changeSlide(3)" class="grey">3</li>
+                        <li @click="changeSlide(1)" class="blue">1</li>
+                        <li @click="changeSlide(2)" class="red">2</li>
+                        <li @click="changeSlide(3)" class="green">3</li>
                         <li @click="nextSlide" class="lightgrey"> &raquo; </li>
                     </ul>
                 </div>
                 <div class="slider-container">
                     <ul class="slider" :style="styleObject">
                         <a href="event.html">
-                            <li class="green slide">EVENT</li>
+                            <li class="blue slide">EVENT</li>
                         </a>
                         <a href="achievement.html">
-                            <li class="blue slide">ACHIEVEMENT</li>
+                            <li class="red slide">ACHIEVEMENT</li>
                         </a>
                         <a href="update.html">
-                            <li class="grey slide">UPDATE</li>
+                            <li class="green slide">UPDATE</li>
                         </a>
                     </ul>
                 </div>
