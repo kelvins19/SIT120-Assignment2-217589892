@@ -5,9 +5,9 @@ new Vue({
     },
     computed: {
         styleObject: function() {
-            const width = 0 - ((this.activeSlide - 1) * 1040)
+            const width = 0 - ((this.activeSlide - 1) * 33)
             return {
-                transform: 'translateX(' + width + 'px)'
+                transform: 'translateX(' + width + '%)'
             }
         }
     },
