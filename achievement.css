@@ -169,3 +169,14 @@ img#loginlogo2 {
     margin: auto;
     width: auto;
 }
+
+.pic {
+    transition: transform .2s;
+    padding: 1%;
+    width: 30%;
+    height: 400px;
+}
+
+.pic:hover {
+    transform: scale(1.05);
+}

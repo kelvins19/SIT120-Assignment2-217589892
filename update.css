@@ -134,16 +134,25 @@
     padding: 20px;
 }
 
+
+/* myPage Styles */
+
 #myPage {
     display: none;
     text-align: center;
 }
+
+
+/* Body Styles */
 
 body {
     margin: 0;
     background-color: black;
     color: white
 }
+
+
+/* Loginlogo Styles */
 
 img#loginlogo {
     width: 150px;
@@ -156,16 +165,96 @@ img#loginlogo2 {
     float: right;
 }
 
+
+/* Heading Styles */
+
 #heading {
     background-color: black;
 }
+
+
+/* Make Text Align Right Styles */
 
 .alighright {
     float: right;
 }
 
+
+/* Content Styles */
+
 .content {
     background-color: blue;
     margin: auto;
     width: auto;
+}
+
+
+/* Pic Boxes Styles */
+
+.pic {
+    transition: transform .2s;
+    padding: 1%;
+    width: 30%;
+    height: 400px;
+}
+
+.pic:hover {
+    transform: scale(1.05);
+}
+
+
+/* Text for Pic Boxes Styles */
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.left {
+    position: absolute;
+    top: 50%;
+    left: 17.5%;
+    transform: translate(-50%, -50%);
+}
+
+.right {
+    position: absolute;
+    top: 50%;
+    left: 82.5%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Box Container Styles */
+
+.box-1 {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+@media screen and (max-width: 600px) {
+    .pic {
+        width: 100%;
+    }
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .left {
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .right {
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }

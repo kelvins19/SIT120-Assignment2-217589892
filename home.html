@@ -13,7 +13,6 @@
     <script src="loader.js"></script>
     <script src="vue.js"></script>
 
-
     <!--Pre-launched loader-->
     <div id="loader"></div>
 
@@ -30,14 +29,18 @@
 
     <!--Main Page-->
     <div id="myPage" class="animate-bottom">
+        <!--HEADER-->
         <div class="header">
             SWIELD
             <button class="openbtn" onclick="openNav()" class="alignleft">&#9776; MENU</button>
-            <a href="login.html"><img id="loginlogo2" src=".\image\my-nintendo.png" class="alignright"> </a>
+            <a href="login.html"><img id="loginlogo2" src=".\image\my-nintendo.png" class="alignright pic"> </a>
         </div>
         <hr>
+        <!--CONTENT-->
         <div class="content">
+            <!--SLIDER-->
             <div id="slider">
+                <!--NAVIGATOR BUTTON-->
                 <div class="navigator">
                     <ul class="navigator">
                         <li @click="prevSlide" class="lightgrey"> &laquo; </li>
@@ -47,7 +50,8 @@
                         <li @click="nextSlide" class="lightgrey"> &raquo; </li>
                     </ul>
                 </div>
-                <div class="slider-container">
+                <!--SLIDER BOX-->
+                <div class="slider-boxes">
                     <ul class="slider" :style="styleObject">
                         <a href="event.html">
                             <li class="blue slide">EVENT</li>
@@ -64,6 +68,7 @@
         </div>
         <script src="content-slider.js"></script>
 
+        <!--FOOTER-->
         <div class="footer">
             &#169 Deakin University. This web page has been developed as a student assignment for the unit SIT120: Introduction to Responsive Web Apps
         </div>

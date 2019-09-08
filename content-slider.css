@@ -1,4 +1,6 @@
-.slider-container {
+/* Slider Boxes Styles */
+
+.slider-boxes {
     overflow: hidden;
     width: 104%;
     height: 400px;
@@ -8,12 +10,18 @@
     transform: translate(-50%, -50%)
 }
 
+
+/* Slider Styles */
+
 .slider {
     width: 310%;
     height: 400px;
     overflow: hidden;
     transition: all .32s ease;
 }
+
+
+/* Slide Styles */
 
 .slide {
     float: left;
@@ -43,6 +51,9 @@
 .lightgrey {
     background: #95a5a6;
 }
+
+
+/* Navigator Button Styles */
 
 .navigator {
     width: 300px;

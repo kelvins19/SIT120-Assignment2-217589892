@@ -134,16 +134,25 @@
     padding: 20px;
 }
 
+
+/* myPage Styles */
+
 #myPage {
     display: none;
     text-align: center;
 }
+
+
+/* Body Styles */
 
 body {
     margin: 0;
     background-color: black;
     color: white
 }
+
+
+/* Loginlogo Styles */
 
 img#loginlogo {
     width: 150px;
@@ -156,19 +165,31 @@ img#loginlogo2 {
     float: right;
 }
 
+
+/* Heading Styles */
+
 #heading {
     background-color: black;
 }
 
+
+/* Make Text Align Right Styles */
+
 .alighright {
     float: right;
 }
+
+
+/* Content Styles */
 
 .content {
     background-color: blue;
     margin: auto;
     width: auto;
 }
+
+
+/* Login Boxes Styles */
 
 #login {
     width: 500px;
@@ -179,6 +200,9 @@ img#loginlogo2 {
     padding: 20px;
 }
 
+
+/* Login Title Styles */
+
 h3#login-title {
     text-align: center;
 }
@@ -186,4 +210,18 @@ h3#login-title {
 #login-title-header {
     margin: auto;
     margin-top: 50px;
+}
+
+
+/* Hover Logo Styles */
+
+.pic {
+    transition: transform .2s;
+    padding: 1%;
+    width: 30%;
+    height: 400px;
+}
+
+.pic:hover {
+    transform: scale(1.05);
 }

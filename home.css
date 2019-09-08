@@ -137,10 +137,16 @@
     padding: 2%;
 }
 
+
+/* myPage Styles */
+
 #myPage {
     display: none;
     text-align: center;
 }
+
+
+/* body Styles */
 
 body {
     margin: 0;
@@ -151,6 +157,9 @@ body {
     overflow: hidden;
     padding: 0;
 }
+
+
+/* loginlogo Styles */
 
 img#loginlogo {
     width: 150px;
@@ -163,19 +172,45 @@ img#loginlogo2 {
     float: right;
 }
 
+
+/* heading Styles */
+
 #heading {
     background-color: black;
 }
 
+
+/* Make Text Align Right Styles */
+
 .alignright {
     float: right;
 }
+
+
+/* Content Styles */
 
 .content {
     margin: auto;
     /*width: auto;*/
 }
 
+
+/* Swield Text Styles */
+
 #swield {
     text-align: center;
+}
+
+
+/* Hover Logo Styles */
+
+.pic {
+    transition: transform .2s;
+    padding: 1%;
+    width: 30%;
+    height: 400px;
+}
+
+.pic:hover {
+    transform: scale(1.05);
 }

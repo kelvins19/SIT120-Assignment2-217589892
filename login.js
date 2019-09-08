@@ -9,17 +9,19 @@ const vueApp = new Vue({
         }
     },
     methods: {
+        // Submit Form if connecting to backend
         submitForm() {
             if (this.validateForm()) {
                 alert('Form Submitted')
-                    //submit form to backend
+
             }
         },
+        // Validating the form before get submitted
         validateForm() {
             var formId = 'validated-form';
             var nodes = document.querySelectorAll(`#${formId} :invalid`);
             var errorObjectName = 'validationErrors';
-            var vm = this; //current vue instance;
+            var vm = this; // Current Vue Instance
 
             Object.keys(this[errorObjectName]).forEach(key => {
                 this[errorObjectName][key] = null

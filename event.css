@@ -135,15 +135,24 @@
     padding: 20px;
 }
 
+
+/* myPage Styles */
+
 #myPage {
     display: none;
 }
+
+
+/* body Styles */
 
 body {
     margin: 0;
     background-color: black;
     color: white
 }
+
+
+/* loginLogo Styles */
 
 img#loginlogo {
     width: 150px;
@@ -156,13 +165,22 @@ img#loginlogo2 {
     float: right;
 }
 
+
+/* Heading Styles */
+
 #heading {
     background-color: black;
 }
 
+
+/* Make Text Align Right Styles */
+
 .alignright {
     float: right;
 }
+
+
+/* Content Styles */
 
 .content {
     background-color: blue;
@@ -170,6 +188,9 @@ img#loginlogo2 {
     width: auto;
     text-align: center;
 }
+
+
+/* Pic for boxes Styles */
 
 .pic {
     transition: transform .2s;
@@ -183,7 +204,7 @@ img#loginlogo2 {
 }
 
 
-/* Centered text */
+/* Text Position for Boxes Styles */
 
 .centered {
     position: absolute;
@@ -205,6 +226,9 @@ img#loginlogo2 {
     left: 82.5%;
     transform: translate(-50%, -50%);
 }
+
+
+/* Box Container Styles */
 
 .box-1 {
     position: relative;
