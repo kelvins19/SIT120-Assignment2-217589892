@@ -1,15 +1,15 @@
 .slider-container {
     overflow: hidden;
-    width: 100%;
+    width: 104%;
     height: 400px;
     position: relative;
     top: 50%;
-    left: 48.5%;
+    left: 48%;
     transform: translate(-50%, -50%)
 }
 
 .slider {
-    width: 300%;
+    width: 310%;
     height: 400px;
     overflow: hidden;
     transition: all .32s ease;
@@ -21,7 +21,7 @@
     height: 400px;
     font-size: 40px;
     color: black;
-    padding-top: 120px;
+    padding-top: 160px;
 }
 
 .green {
@@ -45,10 +45,11 @@
 }
 
 .navigator {
-    width: 290px;
+    width: 300px;
     text-align: center;
     display: inline-block;
     margin: auto;
+    padding-top: 10px;
     margin-bottom: 100px;
     overflow: hidden;
     padding-bottom: 10px;
@@ -58,7 +59,7 @@
     float: left;
     color: black;
     border-radius: 100%;
-    padding: 7px 11px;
+    padding: 7px 12px;
     margin: 0 8px;
     cursor: pointer;
     box-shadow: 0 3px 17px rgba(0, 0, 0, .3);
