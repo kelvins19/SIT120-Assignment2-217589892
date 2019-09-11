@@ -166,10 +166,18 @@ img#loginlogo {
     height: 60px;
 }
 
+img#loginlogo:hover {
+    transform: scale(1.05);
+}
+
 img#loginlogo2 {
-    width: 150px;
+    width: 124px;
     height: 50px;
     float: right;
+}
+
+img#loginlogo2:hover {
+    transform: scale(1.05);
 }
 
 

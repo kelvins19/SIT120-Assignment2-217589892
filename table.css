@@ -1,6 +1,6 @@
 .fixed_header {
-    width: 50%;
-    table-layout: fixed;
+    width: 100%;
+    table-layout: auto;
     border-collapse: collapse;
     margin: auto;
     border: 2px solid white;
@@ -18,22 +18,36 @@
 }
 
 .fixed_header thead {
-    background: rgb(66, 209, 9);
+    background-color: rgb(66, 209, 9);
     color: black;
+    border-bottom: 2px solid black;
 }
 
 .fixed_header td {
-    background: rgb(129, 161, 12);
+    /*background: rgb(129, 161, 12);*/
     height: 30px;
     border-bottom: 1px solid white;
     border-right: 1px solid white;
+}
+
+.fixed_header tbody tr:nth-child(odd) {
+    background-color: rgb(129, 161, 12);
+}
+
+.fixed_header tbody tr:nth-child(even) {
+    background-color: rgb(192, 113, 15);
+}
+
+.fixed_header tbody tr:hover {
+    background-color: #00bfff;
+    border: 2px solid #0023ff;
+    color: black;
 }
 
 .fixed_header th,
 .fixed_header td {
     padding: 5px;
     text-align: center;
-    width: 200px;
 }
 
 @media screen and (max-width: 600px) {
@@ -44,4 +58,16 @@
         margin: auto;
         border: 2px solid white;
     }
+}
+
+.rank {
+    width: 1%;
+}
+
+.playerid {
+    width: 2%;
+}
+
+.score {
+    width: 1%;
 }

@@ -4,6 +4,7 @@
 <head>
     <title> LOGIN TO YOUR NINTENDO ACCOUNT </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="home.css">
     <link rel="stylesheet" type="text/css" href="login.css">
     <link rel="stylesheet" type="text/css" href="sidebar.css">
 </head>
@@ -64,6 +65,7 @@
                         <span class="text-danger" v-if="validationErrors.password" style="width: 100%;" v-text="validationErrors.password"></span>
                     </div>
                 </div>
+                <br>
 
                 <!--Submit Button-->
                 <input type="button" value="Submit" @click.prevent="submitForm()">
