@@ -1,3 +1,13 @@
+/* Scrollable Table Styles */
+
+.table-scrollable {
+    width: 80%;
+    margin: auto;
+}
+
+
+/* Table Fixed Headers */
+
 .fixed_header {
     width: 100%;
     table-layout: auto;
@@ -50,6 +60,9 @@
     text-align: center;
 }
 
+
+/* Responsiveness Style */
+
 @media screen and (max-width: 600px) {
     .fixed_header {
         width: 100%;
@@ -59,6 +72,9 @@
         border: 2px solid white;
     }
 }
+
+
+/* Width for each table */
 
 .rank {
     width: 1%;
