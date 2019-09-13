@@ -4,14 +4,14 @@
 <head>
     <title> LOGIN TO YOUR NINTENDO ACCOUNT </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="home.css">
-    <link rel="stylesheet" type="text/css" href="login.css">
-    <link rel="stylesheet" type="text/css" href="sidebar.css">
+    <link rel="stylesheet" type="text/css" href=".\css\home.css">
+    <link rel="stylesheet" type="text/css" href=".\css\login.css">
+    <link rel="stylesheet" type="text/css" href=".\css\sidebar.css">
 </head>
 
 <body onload="myFunction()">
-    <script src="loader.js"></script>
-    <script src="vue.js"></script>
+    <script src=".\js\loader.js"></script>
+    <script src=".\js\vue.js"></script>
 
     <!--Pre-launched loader-->
     <div id="loader"></div>
@@ -25,7 +25,7 @@
         <a href="leaderboard.html">LEADERBOARD</a>
         <a href="login.html"><img id="loginlogo" src=".\image\my-nintendo.png"></a>
     </div>
-    <script src="sidebar.js"></script>
+    <script src=".\js\sidebar.js"></script>
 
     <!--Main Page-->
     <div id="myPage" class="animate-bottom">
@@ -70,7 +70,7 @@
                 <!--Submit Button-->
                 <input type="button" value="Submit" @click.prevent="submitForm()">
             </form>
-            <script src="login.js"></script>
+            <script src=".\js\login.js"></script>
         </div>
         <!--FOOTER-->
         <div class="footer">
