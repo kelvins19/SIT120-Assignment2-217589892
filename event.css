@@ -70,6 +70,9 @@
     }
 }
 
+
+/* Container Styles */
+
 .container {
     position: relative;
     width: 33%;
@@ -89,9 +92,15 @@
     background-color: #008CBA;
 }
 
+
+/* When the user hovers the mouse, it will show the overlay */
+
 .container:hover .overlay {
     opacity: 1;
 }
+
+
+/* Image Settings */
 
 img#left {
     width: 100%;

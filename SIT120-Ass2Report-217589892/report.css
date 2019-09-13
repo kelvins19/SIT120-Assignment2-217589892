@@ -1,0 +1,54 @@
+h2 {
+    text-align: center;
+}
+
+h4#studid {
+    text-align: center;
+}
+
+img#deakin {
+    width: 10%;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.right {
+    float: right;
+    width: 300px;
+    padding: 10px;
+}
+
+body {
+    text-align: justify;
+    background-color: antiquewhite;
+}
+
+.a {
+    width: 60%;
+    margin: auto;
+    background-color: antiquewhite;
+}
+
+.header {
+    padding: 10px 16px;
+    background: #555;
+    color: #f1f1f1;
+}
+
+img#screenshot {
+    width: 80%;
+    margin: auto;
+}
+
+img#screenshot1 {
+    width: 50%;
+}
+
+.list-head {
+    font-weight: bold;
+}

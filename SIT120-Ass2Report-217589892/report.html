@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> SIT120 Project Proposal </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="report.css">
+</head>
+
+<body>
+    <!--HEADER-->
+    <div style="clear: right" class="header" id="myHeader">
+        <img src="deakinlogo.png" alt="deakin logo" id="deakin" class="right">
+        <h2> SIT120 INTRODUCTION TO RESPONSIVE WEB APPS </h2>
+        <h2> ASSIGNMENT 2 </h2>
+        <h2> PROJECT REPORT </h2>
+
+        <hr>
+        <h4 id="studid"> STUDENT NAME: KELVIN SALIM </h4>
+        <h4 id="studid"> STUDENT ID: 217589892 </h4>
+    </div>
+    <hr>
+
+
+    <div class="a">
+        <!--OVERALL DESCRIPTION-->
+        <h3> OVERALL DESCRIPTION: </h3>
+        <ol>
+            <li class="list-head">
+                Home Page
+            </li>
+            <p>In this home page, there is a slider that contain 3 slides. It also has a button to navigate through all of them. When in normal state, it will have some kind of transparent background, and when we hover our mouse through it, The slider background
+                will become not transparent anymore and show a clearer background color. And also, in every page there will be a side navigation bar, that will show a menu when the user clicks on it and a login button that will redirect user to the login
+                page. Below some screenshots of how the web page will look like:</p>
+            <p>Screenshot of Slider in Normal State. </p>
+            <img src=".\image\SS-Home-UnHover.png" id="screenshot">
+            <p>Screenshot of Slider where the user hover the mouse to it. </p>
+            <img src=".\image\SS-Home-Hover.png" id="screenshot">
+
+            <br><br><br>
+            <li class="list-head">
+                Event & Update Page
+            </li>
+            <p>In this event and update page, there will be 3 boxes. These 3 boxes will show a text when the user hovers the mouse to each of the box in the webpage. When it gets hovered, there will be a background that shows up and there will be a corresponding
+                text to each boxes that exists in the web page. Below is the screenshot on how it is working: </p>
+            <p>Screenshot of Event Page.</p>
+            <img src=".\image\SS-Event.png" id="screenshot">
+            <p>Screenshot of Update Page. </p>
+            <img src=".\image\SS-Update.png" id="screenshot">
+
+            <br><br><br>
+            <li class="list-head">
+                Leaderboard Page
+            </li>
+            <p>In this Leaderboard page, there is a table that contain 30 rows of static data, that can be scrollable and when the user select or hover their mouse to a row in that table, it will show up in blue background, like shown in the screenshot below.
+            </p>
+            <p>Screenshot of Leaderboard Page.</p>
+            <img src=".\image\SS-Leaderboard.png" id="screenshot">
+
+            <br><br><br>
+            <li class="list-head">
+                Login Page
+            </li>
+            <p>In this login page, it only has a simple login form, and ofcourse it will also have a simple form validation, where it will check when there are not any input into the form field, it will show the alert to fill out the field. Otherwise, when
+                the criteria of form input is fulfilled, the form will be submitted to the backend, of course if only this web apps will be connected to the backend in the future development.
+            </p>
+            <p>Screenshot of Login Form Page.</p>
+            <img src=".\image\SS-LoginForm.png" id="screenshot">
+            <p>Screenshot of Form Validation.</p>
+            <img src=".\image\SS-LoginForm-Validate.png" id="screenshot">
+            <p>Screenshot of Form Submitted</p>
+            <img src=".\image\SS-LoginForm-Submitted.png" id="screenshot">
+
+            <br><br><br>
+            <li class="list-head">
+                Side Navigation Menu
+            </li>
+            <p>This side navigation menu will show up when the user clicks the menu button in the left hand side of the web page. The menu will show the list of page that will redirect to its corresponding page. When the user hovers the mouse to a list of
+                it, the text will be highlighted.
+            </p>
+            <p>Screenshot of Leaderboard Page.</p>
+            <img src=".\image\SS-SideNav.png" id="screenshot">
+        </ol>
+
+        <!--CODING CONCEPTS-->
+        <h3> EXPLANATION OF CODING CONCEPTS </h3>
+        <ol>
+            <li class="list-head">
+                Home Page
+            </li>
+            <p>For the Slider in the Home Page. I am using a simple transition component from Vue.JS to control my slider. In the screenshot of the HTML Page below, we can see the code on how to implement our slider code into the HTML with the help of vue
+                transition component. <br>In the CSS, we can see a little part of the screenshot on where we are using the transition component. In there, we can see that it will control on how the slider will move to another slide. <br>In the JavaScript
+                page, we can see that the Vue is controlling on how the slide will be switch to another slide, when the user clicks either the next or previous button. We can see that the data that we pass here is the amount of active slide. If the active
+                slide has already reached 3, the slider will not move to another slide anymore when the user clicks the next button. It also works vice versa.</p>
+            <p>Screenshot of Slider HTML Code </p>
+            <img src=".\image\SS-Code-HomeHTML.png" id="screenshot">
+            <p>Screenshot of Slider CSS Code </p>
+            <img src=".\image\SS-Code-HomeCSS.png" id="screenshot1">
+            <p>Screenshot of Slider JavaScript Code </p>
+            <img src=".\image\SS-Code-HomeJS.png" id="screenshot">
+
+            <br><br><br>
+
+            <li class="list-head">
+                Event & Update Page
+            </li>
+            <p></p>
+            <p>Screenshot of HTML Code</p>
+            <img src=".\image\SS-Code-EventHTML.png" id="screenshot">
+            <p>Screenshot of Slider CSS Code </p>
+            <img src=".\image\SS-Code-EventCSS.png" id="screenshot">
+
+
+            <br><br><br>
+
+        </ol>
+    </div>
+</body>
+
+</html>
