@@ -1,7 +1,7 @@
 var myVar;
 // Set Timeout for 0.5 seconds after that show the page
 function myFunction() {
-    myVar = setTimeout(showPage, 500);
+    myVar = setTimeout(showPage, 200);
 }
 
 // Showing the loader first, then show the main page

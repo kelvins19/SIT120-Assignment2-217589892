@@ -23,7 +23,40 @@
 
 
     <div class="a">
+        <h3>PROJECT REQUIREMENTS:</h3>
+        <p>Purpose of this web application:</p>
+        <ul>
+            <li>To be a companion app with the Pokemon Sword and Pokemon Shield game.</li>
+            <li>This web application is targeted for the player of either or both of those game.</li>
+            <li>It can also be accessed by everyone, even though they are not a player of the game.</li>
+            <li>User can see news of the event or update of the game.</li>
+            <li>User can see the leaderboard of the global player.</li>
+        </ul>
+        <p>This Project requires this component:</p>
+        <ul>
+            <li><a href="https://vuejs.org/v2/guide/forms.html#ad">Form Input Binding</a></li>
+            <li><a href="https://vuejs.org/v2/cookbook/form-validation.html#ad">Form Validation</a></li>
+            <li><a href="https://vuejs.org/v2/guide/transitions.html#ad">Transition</a></li>
+            <li><a href="https://vuejs.org/v2/guide/class-and-style.html#Object-Syntax">Binding Inline Styles With Object Syntax</a></li>
+        </ul>
+        <hr>
+        <h3>ISSUE OR CHALLENGE FACED:</h3>
+        <ul>
+            <li>Cannot Implement Vue.JS into scrollable feature
+                <p>Since week 8, I have tried many tutorial and resource to make a scrollable table by using vuejs, but none of them work. I realised if I keep doing this, my project will not complete. Therefore, I change my plan to implement the feature
+                    using a simple HTML and CSS features instead using Vue.JS</p>
+            </li>
+            <li>Cannot put a background image
+                <p>Since the first week, I started my project. I can't use an image to be my web page background. I have tried many ways and the background still a blank color. But in the week 9, I successfully implemented the background. I realised what's
+                    wrong with my code. As in the CSS, i wrote the URL for the image is like this /image/IMAGE-NAME and it should be like this ../image/IMAGE-NAME </p>
+            </li>
+            <li>Content Slider CSS Adjustment
+                <p>On the first phase of my project development, my content slider looked like a mess, as sometimes the text is disappear, the background is not showing up and many other issues. But now, after I change some variable in the CSS style of the
+                    content slider, the content slider looks tidier and function as it is expected now.</p>
+            </li>
+        </ul>
         <!--OVERALL DESCRIPTION-->
+        <hr>
         <h3> OVERALL DESCRIPTION: </h3>
         <ol>
             <li class="list-head">
@@ -33,9 +66,9 @@
                 will become not transparent anymore and show a clearer background color. And also, in every page there will be a side navigation bar, that will show a menu when the user clicks on it and a login button that will redirect user to the login
                 page. Below some screenshots of how the web page will look like:</p>
             <p>Screenshot of Slider in Normal State. </p>
-            <img src=".\image\SS-Home-UnHover.png" id="screenshot">
+            <img src=".\image\SS-Home-UnHover.png" id="screenshot" class="center">
             <p>Screenshot of Slider where the user hover the mouse to it. </p>
-            <img src=".\image\SS-Home-Hover.png" id="screenshot">
+            <img src=".\image\SS-Home-Hover.png" id="screenshot" class="center">
 
             <br><br><br>
             <li class="list-head">
@@ -44,9 +77,9 @@
             <p>In this event and update page, there will be 3 boxes. These 3 boxes will show a text when the user hovers the mouse to each of the box in the webpage. When it gets hovered, there will be a background that shows up and there will be a corresponding
                 text to each boxes that exists in the web page. Below is the screenshot on how it is working: </p>
             <p>Screenshot of Event Page.</p>
-            <img src=".\image\SS-Event.png" id="screenshot">
+            <img src=".\image\SS-Event.png" id="screenshot" class="center">
             <p>Screenshot of Update Page. </p>
-            <img src=".\image\SS-Update.png" id="screenshot">
+            <img src=".\image\SS-Update.png" id="screenshot" class="center">
 
             <br><br><br>
             <li class="list-head">
@@ -55,7 +88,7 @@
             <p>In this Leaderboard page, there is a table that contain 30 rows of static data, that can be scrollable and when the user select or hover their mouse to a row in that table, it will show up in blue background, like shown in the screenshot below.
             </p>
             <p>Screenshot of Leaderboard Page.</p>
-            <img src=".\image\SS-Leaderboard.png" id="screenshot">
+            <img src=".\image\SS-Leaderboard.png" id="screenshot" class="center">
 
             <br><br><br>
             <li class="list-head">
@@ -65,11 +98,11 @@
                 the criteria of form input is fulfilled, the form will be submitted to the backend, of course if only this web apps will be connected to the backend in the future development.
             </p>
             <p>Screenshot of Login Form Page.</p>
-            <img src=".\image\SS-LoginForm.png" id="screenshot">
+            <img src=".\image\SS-LoginForm.png" id="screenshot" class="center">
             <p>Screenshot of Form Validation.</p>
-            <img src=".\image\SS-LoginForm-Validate.png" id="screenshot">
+            <img src=".\image\SS-LoginForm-Validate.png" id="screenshot" class="center">
             <p>Screenshot of Form Submitted</p>
-            <img src=".\image\SS-LoginForm-Submitted.png" id="screenshot">
+            <img src=".\image\SS-LoginForm-Submitted.png" id="screenshot" class="center">
 
             <br><br><br>
             <li class="list-head">
@@ -79,7 +112,7 @@
                 it, the text will be highlighted.
             </p>
             <p>Screenshot of Leaderboard Page.</p>
-            <img src=".\image\SS-SideNav.png" id="screenshot">
+            <img src=".\image\SS-SideNav.png" id="screenshot" class="center">
         </ol>
         <hr>
         <!--CODING CONCEPTS-->
@@ -88,16 +121,17 @@
             <li class="list-head">
                 Home Page
             </li>
-            <p>For the Slider in the Home Page. I am using a simple transition component from Vue.JS to control my slider. In the screenshot of the HTML Page below, we can see the code on how to implement our slider code into the HTML with the help of vue
-                transition component. <br>In the CSS, we can see a little part of the screenshot on where we are using the transition component. In there, we can see that it will control on how the slider will move to another slide. <br>In the JavaScript
-                page, we can see that the Vue is controlling on how the slide will be switch to another slide, when the user clicks either the next or previous button. We can see that the data that we pass here is the amount of active slide. If the active
-                slide has already reached 3, the slider will not move to another slide anymore when the user clicks the next button. It also works vice versa.</p>
+            <p>For the Slider in the Home Page. I am using a simple <a href="https://vuejs.org/v2/guide/transitions.html#ad">transition</a> component and <a href="https://vuejs.org/v2/guide/class-and-style.html#Object-Syntax">binding inline styles with object syntax</a>from
+                Vue.JS to control my slider. In the screenshot of the HTML Page below, we can see the code on how to implement our slider code into the HTML with the help of vue transition component. <br>In the CSS, we can see a little part of the screenshot
+                on where we are using the transition component. In there, we can see that it will control on how the slider will move to another slide. <br>In the JavaScript page, we can see that the Vue is controlling on how the slide will be switch
+                to another slide, when the user clicks either the next or previous button. We can see that the data that we pass here is the amount of active slide. If the active slide has already reached 3, the slider will not move to another slide anymore
+                when the user clicks the next button. It also works vice versa.</p>
             <p>Screenshot of Slider HTML Code </p>
-            <img src=".\image\SS-Code-HomeHTML.png" id="screenshot">
+            <img src=".\image\SS-Code-HomeHTML.png" id="screenshot" class="center">
             <p>Screenshot of Slider CSS Code </p>
-            <img src=".\image\SS-Code-HomeCSS.png" id="screenshot1">
+            <img src=".\image\SS-Code-HomeCSS.png" id="screenshot1" class="center">
             <p>Screenshot of Slider JavaScript Code </p>
-            <img src=".\image\SS-Code-HomeJS.png" id="screenshot">
+            <img src=".\image\SS-Code-HomeJS.png" id="screenshot" class="center">
 
             <br><br><br>
 
@@ -107,9 +141,9 @@
             <p>For the 3 boxes in the Event and Update Page. I only use HTML and CSS to control and styling it. In the HTML code, I am using table to make it looks tidier. <br>In the CSS page, We can see all the styling that been used to control the box
                 container, like how it will react when the user hovers the mouse into the box. And also, how it will react when the screen becomes smaller or larger.</p>
             <p>Screenshot of HTML Code</p>
-            <img src=".\image\SS-Code-EventHTML.png" id="screenshot">
+            <img src=".\image\SS-Code-EventHTML.png" id="screenshot" class="center">
             <p>Screenshot of CSS Code </p>
-            <img src=".\image\SS-Code-EventCSS.png" id="screenshot">
+            <img src=".\image\SS-Code-EventCSS.png" id="screenshot" class="center">
 
             <br><br><br>
 
@@ -120,21 +154,22 @@
                 been used to control the box container, like how it will have a change of background into blue and change of font color into black when the user hovers the mouse into the box. And also, how it will react when the screen becomes smaller
                 or larger.</p>
             <p>Screenshot of HTML Code</p>
-            <img src=".\image\SS-Code-LBHTML.png" id="screenshot">
+            <img src=".\image\SS-Code-LBHTML.png" id="screenshot" class="center">
             <p>Screenshot of CSS Code </p>
-            <img src=".\image\SS-Code-LBCSS.png" id="screenshot">
+            <img src=".\image\SS-Code-LBCSS.png" id="screenshot" class="center">
 
             <br><br><br>
 
             <li class="list-head">
                 Login Page
             </li>
-            <p>For the login form, we can see in the HTML code, that I am using Form Input Binding component of Vue.JS to create the login form in the login page. <br>In JavaScript code, I am using the form validation component from vuejs to validate the
-                form that will be submitted by the user. In this stage, I am only make it show an alert, if the user puts no value inside the text field of the form. And also once it has been validated, it will submit the form.</p>
+            <p>For the login form, we can see in the HTML code, that I am using <a href="https://vuejs.org/v2/guide/forms.html#ad">Form Input Binding</a> component of Vue.JS to create the login form in the login page. <br>In JavaScript code, I am using the
+                <a href="https://vuejs.org/v2/cookbook/form-validation.html#ad">form validation</a> component from vuejs to validate the form that will be submitted by the user. In this stage, I am only make it show an alert, if the user puts no value
+                inside the text field of the form. And also once it has been validated, it will submit the form.</p>
             <p>Screenshot of HTML Code</p>
-            <img src=".\image\SS-Code-LoginHTML.png" id="screenshot">
+            <img src=".\image\SS-Code-LoginHTML.png" id="screenshot" class="center">
             <p>Screenshot of JS Code </p>
-            <img src=".\image\SS-Code-LoginJS.png" id="screenshot">
+            <img src=".\image\SS-Code-LoginJS.png" id="screenshot" class="center">
 
             <br><br><br>
 
@@ -145,11 +180,11 @@
                 the user clicks the menu button and how the menu will look like in the smaller screen. <br>On how to control the button, I am using a simple javascript code to control it. In the JavaScript code, we can see that it controls when it opens
                 and when it closes. When it opens, the width of the menu will increase from 0 to 250px and when it closes, the width of the menu will come back to 0px. </p>
             <p>Screenshot of HTML Code</p>
-            <img src=".\image\SS-Code-SideNavHTML.png" id="screenshot">
+            <img src=".\image\SS-Code-SideNavHTML.png" id="screenshot" class="center">
             <p>Screenshot of JS Code </p>
-            <img src=".\image\SS-Code-SideNavJS.png" id="screenshot">
+            <img src=".\image\SS-Code-SideNavJS.png" id="screenshot" class="center">
             <p>Screenshot of CSS Code </p>
-            <img src=".\image\SS-Code-SideNavCSS.png" id="screenshot">
+            <img src=".\image\SS-Code-SideNavCSS.png" id="screenshot" class="center">
 
         </ol>
     </div>

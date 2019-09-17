@@ -1,3 +1,4 @@
+// Binding Inline Styles - Object Syntax
 new Vue({
     el: '#slider',
     data: {
