@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> UPDATE </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href=".\css\home.css">
+    <link rel="stylesheet" type="text/css" href=".\css\update.css">
+    <link rel="stylesheet" type="text/css" href=".\css\sidebar.css">
+</head>
+
+<body onload="myFunction()">
+    <script src=".\js\loader.js"></script>
+    <script src=".\js\vue.js"></script>
+
+    <!--Pre-launched loader-->
+    <div id="loader"></div>
+
+    <!--Sidebar Navigation-->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="home.html">HOME</a>
+        <a href="event.html">EVENT</a>
+        <a href="update.html">UPDATE</a>
+        <a href="leaderboard.html">LEADERBOARD</a>
+        <a href="login.html"><img id="loginlogo" src=".\image\my-nintendo.png"></a>
+    </div>
+    <script src=".\js\sidebar.js"></script>
+
+    <!--Main Page-->
+    <div id="myPage" class="animate-bottom">
+        <!--HEADER-->
+        <div class="header">
+            SWIELD
+            <button class="openbtn" onclick="openNav()" class="alignleft">&#9776; MENU</button>
+            <a href="login.html"><img id="loginlogo2" src=".\image\my-nintendo.png" class="alignright pic"></a>
+        </div>
+        <hr>
+        <!--CONTENT-->
+        <div class="content">
+            <h3> NEW UPDATE WILL BE ROLLING OUT WHEN THE GAME IS RELEASED. </h3>
+        </div>
+
+        <table class="box-1">
+            <tr>
+                <td width="30%" height="30%" class="container">
+                    <img id="left" src=".\image\background-2.jpg" class="pic">
+                    <div class="overlay">
+                        <div class="centered">
+                            <p id="update-text">
+                                NEW UPDATE IS COMING SOON
+                            </p>
+                        </div>
+                    </div>
+                </td>
+                <td width="30%" height="30%" class="container">
+                    <img id="center" src=".\image\background-2.jpg" class="pic">
+                    <div class="overlay">
+                        <div class="centered">
+                            <p id="update-text">
+                                NEW UPDATE IS COMING SOON
+                            </p>
+                        </div>
+                    </div>
+                </td>
+                <td width="30%" height="30%" class="container">
+                    <img id="right" src=".\image\background-2.jpg" class="pic">
+                    <div class="overlay">
+                        <div class="centered">
+                            <p id="update-text">
+                                NEW UPDATE IS COMING SOON
+                            </p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <!--FOOTER-->
+        <div class="footer">
+            &#169 Deakin University. This web page has been developed as a student assignment for the unit SIT120: Introduction to Responsive Web Apps <br> KELVIN SALIM - 217589892
+        </div>
+    </div>
+
+</body>
+
+</html>

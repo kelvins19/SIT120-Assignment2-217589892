@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> SIT120 Project Proposal </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="report.css">
+</head>
+
+<body>
+    <!--HEADER-->
+    <div style="clear: right" class="header" id="myHeader">
+        <img src=".\image\deakinlogo.png" alt="deakin logo" id="deakin" class="right">
+        <h2> SIT120 INTRODUCTION TO RESPONSIVE WEB APPS </h2>
+        <h2> ASSIGNMENT 2 </h2>
+        <h2> PROJECT REPORT </h2>
+
+        <hr>
+        <h4 id="studid"> STUDENT NAME: KELVIN SALIM </h4>
+        <h4 id="studid"> STUDENT ID: 217589892 </h4>
+    </div>
+    <hr>
+
+
+    <div class="a">
+        <h3>PROJECT REQUIREMENTS:</h3>
+        <p>This project can also be found on <a href="https://github.com/kelvins19/SIT120-Assignment2-217589892">GitHub</a>.</p>
+        <p><b>Purpose of this web application:</b></p>
+        <ul>
+            <li>To be a companion app with the Pokemon Sword and Pokemon Shield game.</li>
+            <li>This web application is targeted for the player of either or both of those game.</li>
+            <li>It can also be accessed by everyone, even though they are not a player of the game.</li>
+            <li>User can see news of the event or update of the game.</li>
+            <li>User can see the leaderboard of the global player.</li>
+        </ul>
+        <p><b>This Project requires this component:</b></p>
+        <ul>
+            <li><a href="https://vuejs.org/v2/guide/forms.html#ad">Form Input Binding</a></li>
+            <li><a href="https://vuejs.org/v2/cookbook/form-validation.html#ad">Form Validation</a></li>
+            <li><a href="https://vuejs.org/v2/guide/transitions.html#ad">Transition</a></li>
+            <li><a href="https://vuejs.org/v2/guide/class-and-style.html#Object-Syntax">Binding Inline Styles With Object Syntax</a></li>
+            <li><a href="https://www.w3schools.com/cssref/sel_hover.asp">CSS Hover Selector</a></li>
+            <li><a href="https://www.w3schools.com/html/html_tables.asp">HTML Tables</a> and <a href="https://www.w3schools.com/css/css_table.asp">CSS Tables</a></li>
+        </ul>
+        <p><b>How the Web will navigate with each other page:</b></p>
+        <p>From the flowchart below, we can see that each web page has menu bar, that contains all the other 5 pages links. In home page, it has a content slider that contain event, update, and leaderboard hyperlinks. In event and update page, it has three
+            boxes that has description of the corresponding box, when the mouse hover to its box. In leaderboard page, there is a scrollable table, that lists all player that play the games. In login page, there is a form field that asked for username
+            and password. The form will be validated first before get submitted, when the user clicks the submit button.</p>
+        <img src=".\image\120FlowChart.png" id="screenshot" class="center">
+        <hr>
+        <h3>ISSUE OR CHALLENGE FACED:</h3>
+        <ul>
+            <li>Cannot Implement Vue.JS into scrollable feature
+                <p>Since week 8, I have tried many tutorial and resource to make a scrollable table by using vuejs, but none of them work. I realised if I keep doing this, my project will not complete. Therefore, I change my plan to implement the feature
+                    using a simple HTML and CSS features instead using Vue.JS</p>
+            </li>
+            <li>Cannot put a background image
+                <p>Since the first week, I started my project. I can't use an image to be my web page background. I have tried many ways and the background still a blank color. But in the week 9, I successfully implemented the background. I realised what's
+                    wrong with my code. As in the CSS, i wrote the URL for the image is like this /image/IMAGE-NAME and it should be like this ../image/IMAGE-NAME </p>
+            </li>
+            <li>Content Slider CSS Adjustment
+                <p>On the first phase of my project development, my content slider looked like a mess, as sometimes the text is disappear, the background is not showing up and many other issues. But now, after I change some variable in the CSS style of the
+                    content slider, the content slider looks tidier and function as it is expected now.</p>
+            </li>
+        </ul>
+        <!--OVERALL DESCRIPTION-->
+        <hr>
+        <h3> OVERALL DESCRIPTION: </h3>
+        <ol>
+            <li class="list-head">
+                Home Page
+            </li>
+            <p>In this home page, there is a slider that contain 3 slides. It also has a button to navigate through all of them. When in normal state, it will have some kind of transparent background, and when we hover our mouse through it, The slider background
+                will become not transparent anymore and show a clearer background color. And also, in every page there will be a side navigation bar, that will show a menu when the user clicks on it and a login button that will redirect user to the login
+                page. Below some screenshots of how the web page will look like:</p>
+            <p>Screenshot of Slider in Normal State. </p>
+            <img src=".\image\SS-Home-UnHover.png" id="screenshot" class="center">
+            <p>Screenshot of Slider where the user hover the mouse to it. </p>
+            <img src=".\image\SS-Home-Hover.png" id="screenshot" class="center">
+
+            <br><br><br>
+            <li class="list-head">
+                Event & Update Page
+            </li>
+            <p>In this event and update page, there will be 3 boxes. These 3 boxes will show a text when the user hovers the mouse to each of the box in the webpage. When it gets hovered, there will be a background that shows up and there will be a corresponding
+                text to each boxes that exists in the web page. Below is the screenshot on how it is working: </p>
+            <p>Screenshot of Event Page.</p>
+            <img src=".\image\SS-Event.png" id="screenshot" class="center">
+            <p>Screenshot of Update Page. </p>
+            <img src=".\image\SS-Update.png" id="screenshot" class="center">
+
+            <br><br><br>
+            <li class="list-head">
+                Leaderboard Page
+            </li>
+            <p>In this Leaderboard page, there is a table that contain 30 rows of static data, that can be scrollable and when the user select or hover their mouse to a row in that table, it will show up in blue background, like shown in the screenshot below.
+            </p>
+            <p>Screenshot of Leaderboard Page.</p>
+            <img src=".\image\SS-Leaderboard.png" id="screenshot" class="center">
+
+            <br><br><br>
+            <li class="list-head">
+                Login Page
+            </li>
+            <p>In this login page, it only has a simple login form, and ofcourse it will also have a simple form validation, where it will check when there are not any input into the form field, it will show the alert to fill out the field. Otherwise, when
+                the criteria of form input is fulfilled, the form will be submitted to the backend, of course if only this web apps will be connected to the backend in the future development.
+            </p>
+            <p>Screenshot of Login Form Page.</p>
+            <img src=".\image\SS-LoginForm.png" id="screenshot" class="center">
+            <p>Screenshot of Form Validation.</p>
+            <img src=".\image\SS-LoginForm-Validate.png" id="screenshot" class="center">
+            <p>Screenshot of Form Submitted</p>
+            <img src=".\image\SS-LoginForm-Submitted.png" id="screenshot" class="center">
+
+            <br><br><br>
+            <li class="list-head">
+                Side Navigation Menu
+            </li>
+            <p>This side navigation menu will show up when the user clicks the menu button in the left hand side of the web page. The menu will show the list of page that will redirect to its corresponding page. When the user hovers the mouse to a list of
+                it, the text will be highlighted.
+            </p>
+            <p>Screenshot of Leaderboard Page.</p>
+            <img src=".\image\SS-SideNav.png" id="screenshot" class="center">
+        </ol>
+        <hr>
+        <!--CODING CONCEPTS-->
+        <h3> EXPLANATION OF CODING CONCEPTS </h3>
+        <ol>
+            <li class="list-head">
+                Home Page
+            </li>
+            <p>For the Slider in the Home Page. I am using a simple <a href="https://vuejs.org/v2/guide/transitions.html#ad">transition</a> component and <a href="https://vuejs.org/v2/guide/class-and-style.html#Object-Syntax">binding inline styles with object syntax</a>from
+                Vue.JS to control my slider. In the screenshot of the HTML Page below, we can see the code on how to implement our slider code into the HTML with the help of vue transition component. <br>In the CSS, we can see a little part of the screenshot
+                on where we are using the transition component. In there, we can see that it will control on how the slider will move to another slide. <br>In the JavaScript page, we can see that the Vue is controlling on how the slide will be switch
+                to another slide, when the user clicks either the next or previous button. We can see that the data that we pass here is the amount of active slide. If the active slide has already reached 3, the slider will not move to another slide anymore
+                when the user clicks the next button. It also works vice versa.</p>
+            <p>Screenshot of Slider HTML Code </p>
+            <img src=".\image\SS-Code-HomeHTML.png" id="screenshot" class="center">
+            <p>Screenshot of Slider CSS Code </p>
+            <img src=".\image\SS-Code-HomeCSS.png" id="screenshot1" class="center">
+            <p>Screenshot of Slider JavaScript Code </p>
+            <img src=".\image\SS-Code-HomeJS.png" id="screenshot" class="center">
+
+            <br><br><br>
+
+            <li class="list-head">
+                Event & Update Page
+            </li>
+            <p>For the 3 boxes in the Event and Update Page. I only use HTML and CSS to control and styling it. In the HTML code, I am using table to make it looks tidier. <br>In the CSS page, We can see all the styling that been used to control the box
+                container, like how it will react when the user hovers the mouse into the box. And also, how it will react when the screen becomes smaller or larger.</p>
+            <p>Screenshot of HTML Code</p>
+            <img src=".\image\SS-Code-EventHTML.png" id="screenshot" class="center">
+            <p>Screenshot of CSS Code </p>
+            <img src=".\image\SS-Code-EventCSS.png" id="screenshot" class="center">
+
+            <br><br><br>
+
+            <li class="list-head">
+                Leaderboard Page
+            </li>
+            <p>For the Leaderboard table, I also only use HTML and CSS to create it. In the HTML code, I am using a table to create a table with 3 columns and 30 rows that contains 30 rows of static data. <br>In the CSS page, We can see all the styling that
+                been used to control the box container, like how it will have a change of background into blue and change of font color into black when the user hovers the mouse into the box. And also, how it will react when the screen becomes smaller
+                or larger.</p>
+            <p>Screenshot of HTML Code</p>
+            <img src=".\image\SS-Code-LBHTML.png" id="screenshot" class="center">
+            <p>Screenshot of CSS Code </p>
+            <img src=".\image\SS-Code-LBCSS.png" id="screenshot" class="center">
+
+            <br><br><br>
+
+            <li class="list-head">
+                Login Page
+            </li>
+            <p>For the login form, we can see in the HTML code, that I am using <a href="https://vuejs.org/v2/guide/forms.html#ad">Form Input Binding</a> component of Vue.JS to create the login form in the login page. <br>In JavaScript code, I am using the
+                <a href="https://vuejs.org/v2/cookbook/form-validation.html#ad">form validation</a> component from vuejs to validate the form that will be submitted by the user. In this stage, I am only make it show an alert, if the user puts no value
+                inside the text field of the form. And also once it has been validated, it will submit the form.</p>
+            <p>Screenshot of HTML Code</p>
+            <img src=".\image\SS-Code-LoginHTML.png" id="screenshot" class="center">
+            <p>Screenshot of JS Code </p>
+            <img src=".\image\SS-Code-LoginJS.png" id="screenshot" class="center">
+
+            <br><br><br>
+
+            <li class="list-head">
+                Side Bar Navigation Menu
+            </li>
+            <p>For side navigation menu, In the CSS code, we can see the styling for the menu button. Like, it has to stay in the left hand side of the page, the position of the button is fixed, so it cannot move anywhere, how it will open the menu when
+                the user clicks the menu button and how the menu will look like in the smaller screen. <br>On how to control the button, I am using a simple javascript code to control it. In the JavaScript code, we can see that it controls when it opens
+                and when it closes. When it opens, the width of the menu will increase from 0 to 250px and when it closes, the width of the menu will come back to 0px. </p>
+            <p>Screenshot of HTML Code</p>
+            <img src=".\image\SS-Code-SideNavHTML.png" id="screenshot" class="center">
+            <p>Screenshot of JS Code </p>
+            <img src=".\image\SS-Code-SideNavJS.png" id="screenshot" class="center">
+            <p>Screenshot of CSS Code </p>
+            <img src=".\image\SS-Code-SideNavCSS.png" id="screenshot" class="center">
+
+        </ol>
+    </div>
+</body>
+
+</html>

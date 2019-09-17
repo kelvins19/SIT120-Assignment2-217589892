@@ -1,0 +1,89 @@
+/* Scrollable Table Styles */
+
+.table-scrollable {
+    width: 80%;
+    margin: auto;
+}
+
+
+/* Table Fixed Headers */
+
+.fixed_header {
+    width: 100%;
+    table-layout: auto;
+    border-collapse: collapse;
+    margin: auto;
+    border: 2px solid white;
+}
+
+.fixed_header tbody {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    height: 400px;
+}
+
+.fixed_header thead tr {
+    display: block;
+}
+
+.fixed_header thead {
+    background-color: rgb(66, 209, 9);
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+.fixed_header td {
+    /*background: rgb(129, 161, 12);*/
+    height: 30px;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.fixed_header tbody tr:nth-child(odd) {
+    background-color: rgb(129, 161, 12);
+}
+
+.fixed_header tbody tr:nth-child(even) {
+    background-color: rgb(192, 113, 15);
+}
+
+.fixed_header tbody tr:hover {
+    background-color: #00bfff;
+    border: 2px solid #0023ff;
+    color: black;
+}
+
+.fixed_header th,
+.fixed_header td {
+    padding: 5px;
+    text-align: center;
+}
+
+
+/* Responsiveness Style */
+
+@media screen and (max-width: 600px) {
+    .fixed_header {
+        width: 100%;
+        table-layout: fixed;
+        border-collapse: collapse;
+        margin: auto;
+        border: 2px solid white;
+    }
+}
+
+
+/* Width for each table */
+
+.rank {
+    width: 1%;
+}
+
+.playerid {
+    width: 2%;
+}
+
+.score {
+    width: 1%;
+}
